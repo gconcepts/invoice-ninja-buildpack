@@ -25,7 +25,7 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 	mv $SOURCE_PATH/*/* $SOURCE_PATH/
 fi
 
-rsync -av $SOURCE_PATH $BUILD_DIR/
+rsync -qav $SOURCE_PATH $BUILD_DIR/
 
 ls -la $BUILD_DIR
 
