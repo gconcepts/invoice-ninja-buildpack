@@ -2,7 +2,12 @@
 # bin/compile <build-dir> <cache-dir> <env-dir>
 set -eu
 BUILD_DIR=$1
+CACHE_DIR=$2
 ENV_DIR=$3
+
+echo $1
+echo $2
+echo $3
 
 APP_ARCHIVE=$(cat $ENV_DIR/APP_ARCHIVE)
 
