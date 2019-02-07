@@ -7,7 +7,7 @@ You want to run generic PHP applications on heroku? That's what this custom buil
 ## Installation
 **1. Create your heroku app**
 
-If you don't have an heroku app already, create a new one. If you do, you can of course use your existing one with this buildpack, too.
+If you don't already have an heroku app, create a new one. If you do, you can of course use your existing one with this buildpack, too.
 
 ---
 **2. Configure the required buildpacks**
