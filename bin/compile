@@ -13,6 +13,9 @@ APP_ARCHIVE=$(cat $ENV_DIR/APP_ARCHIVE)
 ARCHIVE_PATH=$CACHE_DIR/src.zip
 SOURCE_PATH=$CACHE_DIR/src
 
+rm -f $ARCHIVE_PATH
+rm -rf $SOURCE_PATH
+
 echo "-----> Downloading $APP_ARCHIVE"
 wget -q $APP_ARCHIVE -O $ARCHIVE_PATH >/dev/null
 
