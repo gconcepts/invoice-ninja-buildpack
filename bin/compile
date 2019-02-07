@@ -27,4 +27,6 @@ fi
 
 mv $SOURCE_PATH/ $BUILD_DIR/
 
+ls -la $BUILD_DIR
+
 echo "-----> Application files deployed."
