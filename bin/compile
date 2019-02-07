@@ -10,11 +10,21 @@ echo $2
 echo $3
 
 APP_ARCHIVE=$(cat $ENV_DIR/APP_ARCHIVE)
+ARCHIVE_PATH=$CACHE_DIR/src.zip
+SOURCE_PATH=$CACHE_DIR/src
 
 echo "-----> Downloading $APP_ARCHIVE"
-wget -q $APP_ARCHIVE -O $CACHE_DIR/src.zip >/dev/null
+wget -q $APP_ARCHIVE -O $ARCHIVE_PATH >/dev/null
 
 echo "-----> Unpacking application archive"
-unzip -q $CACHE_DIR/src.zip -d $BUILD_DIR
+unzip -q $ARCHIVE_PATH -d $SOURCE_PATH
+
+FOLDER_COUNT=$(ls -1 $SOURCE_PATH | wc -l)
+if [ $FOLDER_COUNT -eq 1 ]; then
+	echo "       Removing first folder level"
+	mv $SOURCE_PATH/*/* $SOURCE_PATH/
+fi
+
+mv $SOURCE_PATH/ $BUILD_DIR/
 
 echo "-----> Application files deployed."
