@@ -3,5 +3,5 @@
 set -eu
 BUILD_DIR=$1
 
-echo "External zipped PHP"
+echo "External ZIP-archive"
 exit 0
