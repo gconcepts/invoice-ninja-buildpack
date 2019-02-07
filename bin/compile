@@ -15,6 +15,6 @@ echo "-----> Downloading $APP_ARCHIVE"
 wget -q $APP_ARCHIVE -O $CACHE_DIR/src.zip >/dev/null
 
 echo "-----> Unpacking application archive"
-unzip $CACHE_DIR/src.zip -d $BUILD_DIR
+unzip -q $CACHE_DIR/src.zip -d $BUILD_DIR
 
 echo "-----> Application files deployed."
