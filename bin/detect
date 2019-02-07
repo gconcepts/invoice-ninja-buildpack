@@ -3,5 +3,5 @@
 set -eu
 BUILD_DIR=$1
 
-echo "generic PHP application"
+echo "generic PHP"
 exit 0
