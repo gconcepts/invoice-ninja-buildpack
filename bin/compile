@@ -5,10 +5,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-echo $1
-echo $2
-echo $3
-
 APP_ARCHIVE=$(cat $ENV_DIR/APP_ARCHIVE)
 ARCHIVE_PATH=$CACHE_DIR/src.zip
 SOURCE_PATH=$CACHE_DIR/src
@@ -29,7 +25,5 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 fi
 
 rsync -qavI $SOURCE_PATH/ $BUILD_DIR
-
-ls -la $BUILD_DIR
 
 echo "-----> Application files deployed."
