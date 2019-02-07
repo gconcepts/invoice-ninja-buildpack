@@ -14,7 +14,7 @@ If you don't already have an heroku app, create a new one. If you do, you can of
 
 This buildpack works in combination with the corresponding buildpack to run your application code. For example, when running an external PHP app, you could use it together with `heroku/php`. The minimal configuration would be adding the following buildpack to your application:
 
-    https://github.com/janxb/heroku-php-app-buildpack.git
+    https://github.com/janxb/heroku-zipped-app-buildpack.git
     
 *(Hint: The order is important, always place the custom buildpack at the top)*
 
