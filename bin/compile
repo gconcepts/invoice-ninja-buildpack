@@ -28,7 +28,7 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 	mv $SOURCE_PATH/*/* $SOURCE_PATH/
 fi
 
-rsync -qavI --delete $SOURCE_PATH/ $BUILD_DIR
+rsync -qavI $SOURCE_PATH/ $BUILD_DIR
 
 ls -la $BUILD_DIR
 
