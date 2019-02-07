@@ -12,7 +12,7 @@ echo $3
 APP_ARCHIVE=$(cat $ENV_DIR/APP_ARCHIVE)
 
 echo "-----> Downloading $APP_ARCHIVE"
-wget $APP_ARCHIVE -O $CACHE_DIR/src.zip >/dev/null
+wget -q $APP_ARCHIVE -O $CACHE_DIR/src.zip >/dev/null
 
 echo "-----> Unpacking application archive"
 unzip $CACHE_DIR/src.zip -d $BUILD_DIR
