@@ -3,4 +3,5 @@
 set -eu
 BUILD_DIR=$1
 
-exit "generic PHP application"
+echo "generic PHP application"
+exit 0
