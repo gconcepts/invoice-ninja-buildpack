@@ -1,8 +1,8 @@
 
 
 
-# heroku-php-app-buildpack
-You want to run generic PHP applications on heroku? That's what this custom buildpack is for! Just add it to your project and point it to your application source ZIP file, and off we go.
+# heroku-zipped-app-buildpack
+You want to download generic, zipped applications on heroku? That's what this custom buildpack is for! Just add it to your project and point it to your application source ZIP file, and off we go.
 
 ## Installation
 **1. Create your heroku app**
