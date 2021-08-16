@@ -23,7 +23,7 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 	echo "       Removing first folder level"
 	mv $SOURCE_PATH/*/* $SOURCE_PATH/
 fi
-apt update && apt install php-gd -y
+apt update && apt install php-gd php-bcmath -y
 rsync -qavI $SOURCE_PATH/ $BUILD_DIR
 
 echo "-----> Application files deployed."
