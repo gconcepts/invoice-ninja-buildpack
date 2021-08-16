@@ -23,7 +23,7 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 	echo "       Removing first folder level"
 	mv $SOURCE_PATH/*/* $SOURCE_PATH/
 fi
-chown 777 *
+chown 777 .env
 rsync -qavI $SOURCE_PATH/ $BUILD_DIR
 
 echo "-----> Application files deployed."
