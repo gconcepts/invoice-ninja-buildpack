@@ -23,6 +23,8 @@ if [ $FOLDER_COUNT -eq 1 ]; then
 	echo "       Removing first folder level"
 	mv $SOURCE_PATH/*/* $SOURCE_PATH/
 fi
+cd ../
+cd invoi*
 chown 777 .env
 rsync -qavI $SOURCE_PATH/ $BUILD_DIR
 
